@@ -8,6 +8,7 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    environment: chitmo.com
 
     steps:
       - uses: actions/checkout@v4
