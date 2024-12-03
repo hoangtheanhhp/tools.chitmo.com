@@ -1,0 +1,29 @@
+# Use an official node image as the base image
+FROM node:20-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Install PNPM globally
+RUN npm install -g pnpm
+
+# Copy the package.json and pnpm-lock.yaml files first to leverage Docker cache
+COPY package.json pnpm-lock.yaml ./
+
+# Install dependencies using PNPM
+RUN pnpm install --frozen-lockfile
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the Prisma schema (optional if Prisma migrations are needed)
+RUN pnpm prisma generate
+
+# Build the API (if there's any build step involved, like transpiling TypeScript)
+RUN pnpm build
+
+# Expose the API port (assuming h3 server runs on 3000)
+EXPOSE 3001
+
+# Start the server
+CMD ["pnpm", "api:start"]

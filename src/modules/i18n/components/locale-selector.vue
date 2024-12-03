@@ -3,15 +3,16 @@ const { availableLocales, locale } = useI18n();
 
 const localesLong: Record<string, string> = {
   en: 'English',
-  de: 'Deutsch',
-  es: 'Español',
-  fr: 'Français',
-  no: 'Norwegian',
-  pt: 'Português',
-  ru: 'Русский',
-  uk: 'Українська',
+  // de: 'Deutsch',
+  // es: 'Español',
+  // fr: 'Français',
+  // no: 'Norwegian',
+  // pt: 'Português',
+  // ru: 'Русский',
+  // uk: 'Українська',
   zh: '中文',
   vi: 'Tiếng Việt',
+  jp: '日本語',
 };
 
 const localeOptions = computed(() =>

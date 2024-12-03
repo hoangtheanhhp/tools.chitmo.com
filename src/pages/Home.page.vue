@@ -5,6 +5,7 @@ import { computed } from 'vue';
 import Draggable from 'vuedraggable';
 import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
+
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
 
@@ -28,14 +29,14 @@ function onUpdateFavoriteTools() {
         <ColoredCard v-if="config.showBanner" :title="$t('home.follow.title')" :icon="IconHeart">
           {{ $t('home.follow.p1') }}
           <a
-            href="https://github.com/CorentinTh/it-tools"
+            href="https://github.com/hoangtheanhhp/it-tools"
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.githubRepository')"
           >GitHub</a>
           {{ $t('home.follow.p2') }}
           <a
-            href="https://x.com/ittoolsdottech"
+            href="https://x.com/hoangtheanhhp"
             rel="noopener"
             target="_blank"
             :aria-label="$t('home.follow.twitterXAccount')"

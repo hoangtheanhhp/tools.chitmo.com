@@ -1,0 +1,93 @@
+'404':
+  notFound: 404 見つかりません
+  sorry: 申し訳ありませんが、このページは存在しないようです
+  maybe: キャッシュが問題を起こしているかもしれません。強制的に更新してみてください
+  backHome: ホームに戻る
+home:
+  categories:
+    newestTools: 最新のツール
+    favoriteTools: お気に入りのツール
+    allTools: すべてのツール
+  subtitle: 開発者のための便利なツール
+  toggleMenu: メニューを切り替える
+  home: ホーム
+  uiLib: UI ライブラリ
+  support: IT-Toolsの開発をサポートする
+  buyMeACoffee: コーヒーをおごる
+  follow:
+    title: IT-Toolsが気に入りましたか？
+    p1: GitHubでスターをつけてください
+    githubRepository: IT-Tools GitHub リポジトリ
+    p2: またはTwitterでフォローしてください
+    twitterAccount: IT-ToolsのTwitterアカウント
+    thankYou: ありがとうございます！
+  nav:
+    github: GitHub リポジトリ
+    githubRepository: IT-Tools GitHub リポジトリ
+    twitter: Twitter アカウント
+    twitterAccount: IT Tools X アカウント
+    about: IT-Toolsについて
+    aboutLabel: について
+    darkMode: ダークモード
+    lightMode: ライトモード
+    mode: ダーク/ライトモードを切り替える
+    chitmo: ブログ chitmo.com について
+about:
+  content: >
+    # IT-Toolsについて
+
+    ❤で作られた素晴らしいこのウェブサイトは、開発者やITに携わる人々に役立つツールを集めたものです。
+    もしこのサイトが役に立つと感じたら、同じように役立つと思う人にシェアし、ブックマークすることをお忘れなく！
+
+    IT Toolsはオープンソース（MITライセンス）であり、無料で利用できますが、ホスティングやドメイン名の更新には費用がかかります。
+    より多くのツールを追加するためのサポートとして[サポートして](https://www.buymeacoffee.com/hoangtheanhhp)いただければ幸いです。
+
+    ## 技術
+
+    IT ToolsはVue.js（Vue 3）とNaive UIコンポーネントライブラリを使って作成され、Vercelによってホスティングされ継続的にデプロイされています。
+    一部のツールにはサードパーティのオープンソースライブラリが使用されています。完全なリストはリポジトリの[package.json](https://github.com/hoangtheanhhp/it-tools/blob/main/package.json)ファイルにあります。
+
+    ## バグを見つけましたか？ ツールが足りませんか？
+
+    ここにまだ存在しないツールが必要で、それが役に立つと思う場合は、GitHubリポジトリの[issuesセクション](https://github.com/hoangtheanhhp/it-tools/issues/new/choose)でフィーチャーリクエストを提出してください。
+
+    また、バグを見つけたり、期待通りに動作しないものがあれば、[issuesセクション](https://github.com/hoangtheanhhp/it-tools/issues/new/choose)にバグレポートを提出してください。
+favoriteButton:
+  remove: お気に入りから削除
+  add: お気に入りに追加
+toolCard:
+  new: 新規
+search:
+  label: 検索
+tools:
+  categories:
+    favorite-tools: あなたのお気に入りのツール
+    crypto: 暗号
+    converter: 変換ツール
+    web: ウェブ
+    images and videos: 画像 & 動画
+    development: 開発
+    network: ネットワーク
+    math: 数学
+    measurement: 測定
+    text: テキスト
+    data: データ
+  password-strength-analyser:
+    title: パスワード強度アナライザー
+    description: クライアントサイドのみで動作するパスワード強度アナライザーとクラック時間推定ツールです。
+  chronometer:
+    title: クロノメーター
+    description: 時間の長さを監視する基本的なクロノメーター機能。
+  token-generator:
+    title: トークンジェネレーター
+    description: 任意の文字、大文字・小文字のアルファベット、数字、記号を使用してランダムな文字列を生成します。
+    uppercase: 大文字 (ABC...)
+    lowercase: 小文字 (abc...)
+    numbers: 数字 (123...)
+    symbols: 記号 (!-;...)
+    length: 長さ
+    tokenPlaceholder: トークン...
+    copied: トークンをクリップボードにコピーしました
+    button:
+      copy: コピー
+      refresh: 更新

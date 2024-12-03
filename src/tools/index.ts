@@ -4,7 +4,7 @@ import { tool as basicAuthGenerator } from './basic-auth-generator';
 import { tool as emailNormalizer } from './email-normalizer';
 
 import { tool as asciiTextDrawer } from './ascii-text-drawer';
-
+import { tool as JapaneseConverter } from './japanese-converter';
 import { tool as textToUnicode } from './text-to-unicode';
 import { tool as safelinkDecoder } from './safelink-decoder';
 import { tool as xmlToJson } from './xml-to-json';
@@ -87,6 +87,8 @@ import { tool as uuidGenerator } from './uuid-generator';
 import { tool as macAddressLookup } from './mac-address-lookup';
 import { tool as xmlFormatter } from './xml-formatter';
 import { tool as yamlViewer } from './yaml-viewer';
+import { tool as pdfTools } from './pdf-tools';
+import { tool as varSaoKe } from './var-sao-ke';
 
 export const toolsByCategory: ToolCategory[] = [
   {
@@ -116,6 +118,7 @@ export const toolsByCategory: ToolCategory[] = [
       xmlToJson,
       jsonToXml,
       markdownToHtml,
+      JapaneseConverter,
     ],
   },
   {
@@ -189,6 +192,10 @@ export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Data',
     components: [phoneParserAndFormatter, ibanValidatorAndParser],
+  },
+  {
+    name: 'Others',
+    components: [pdfTools, varSaoKe],
   },
 ];
 
